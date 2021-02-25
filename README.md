@@ -12,7 +12,7 @@
 1. Get an API Key
 https://developers.google.com/places/android-sdk/get-api-key
 2. Make a fingerprint
-SHA-1 fingerprint: Right pane in Android Studio > Gradle > My Direction > Tasks > android > signingReport
+SHA-1 fingerprint: Right pane in Android Studio > Gradle > My Direction(or your project) > Tasks > android > signingReport
 3. Enable Billing
 We need to enable billing in order to search the place.
 https://console.cloud.google.com/project/_/billing/enable
