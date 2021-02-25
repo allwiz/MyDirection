@@ -1,6 +1,6 @@
 # MyDirection
 
-<h3>Developement version
+<h3>Developement version</h3>
 <br><a id="raw-url" href="https://github.com/allwiz/MyDirection/blob/main/bin/net.allwiz.mydirection-v1.0.2-release.apk">My Direction APK</a>
 
 **Screenshots**
