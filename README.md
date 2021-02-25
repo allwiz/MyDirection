@@ -8,7 +8,7 @@
 ![alt text](https://github.com/allwiz/MyDirection/blob/main/doc/mydirection.app.screenshots.png "My Direction")
 
 **Build Guide**
-<br>You need to use your own api key to search the places. If you get your api key, please replace '@string/place_api_key' with api key
+<br>You need to use your own api key to search the places. If you get it, please replace '@string/place_api_key' with the api key
 1. Get an API Key
 https://developers.google.com/places/android-sdk/get-api-key
 2. Make a fingerprint
