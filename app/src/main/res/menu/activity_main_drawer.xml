@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_recent"
+            android:icon="@drawable/ic_check_circle_outline"
+            android:title="@string/page_title_recent" />
+        <item
+            android:id="@+id/nav_favorite"
+            android:icon="@drawable/ic_favorite_border"
+            android:title="@string/page_title_favorite" />
+        <item
+            android:id="@+id/nav_travel"
+            android:icon="@drawable/ic_card_travel"
+            android:title="@string/page_title_travel" />
+    </group>
+</menu>

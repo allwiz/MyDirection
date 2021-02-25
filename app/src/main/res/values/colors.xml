@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    <color name="colorPrimary">#3F51B5</color>
+     <color name="colorPrimaryDark">#303F9F</color>
+
+     <color name="colorPrimary">#40586D</color>
+    <color name="colorPrimaryDark">#40586D</color>
+-->
+    <color name="colorPrimary">#035EBE</color>
+    <color name="colorPrimaryDark">#035EBE</color>
+    <color name="colorAccent">#3C8DFB</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#F2F2F2</color>
+    <color name="dark_gray">#BDBDBD</color>
+    <color name="dark_gray_2">#828282</color>
+    <color name="blue">#0F5AA2</color>
+    <color name="black">#000000</color>
+    <color name="purple">#9575CD</color>
+    <color name="green">#72C859</color>
+    <color name="yellow">#FDBC56</color>
+    <color name="sky_blue">#2DA6F2</color>
+    <color name="description">#666666</color>
+    <color name="label_name">#333333</color>
+    <color name="label_place_names">#828282</color>
+    <color name="drive_divider_line">#448AFF</color>
+    <color name="transport_mode_line">#448AFF</color>
+    <color name="orange">#FF9800</color>
+    <color name="light_red">#FF6E6E</color>
+    <color name="gray">#C7C7C7</color>
+
+
+    <!-- tab title -->
+    <color name="tab_title_dark">#033B85</color>
+    <color name="tab_title_light">#FFFFFF</color>
+    <color name="tab_title_background">#3F51B5</color>
+    <!--
+    <color name="tab_normal_text">#94A7CB</color>
+    <color name="tab_indicator">#94A7CB</color>
+    <color name="tab_normal_text">#D2E1F0</color>
+    <color name="tab_indicator">#D2E1F0</color>
+    -->
+    <color name="tab_normal_text">#94A7CB</color>
+    <color name="tab_indicator">#94A7CB</color>
+    <color name="place">#5D88AF</color>
+
+
+    <color name="notice_text">#84888F</color>
+    <color name="label_aquamarine">#29D5BF</color>
+
+    <color name="dark_purple">#A142F4</color>
+    <color name="magenta">#F538A0</color>
+    <color name="cyan">#24C1E0</color>
+    <color name="light_blue">#03A4EC</color>
+    <color name="light_blue_2">#66CBF7</color>
+    <color name="light_blue_3">#9ADDFA</color>
+    <color name="dark_green">#438240</color>
+
+    <array name="item_colors">
+        <item>@color/sky_blue</item>
+        <item>@color/orange</item>
+        <item>@color/green</item>
+        <item>@color/light_blue_3</item>
+        <item>@color/magenta</item>
+        <item>@color/yellow</item>
+        <item>@color/cyan</item>
+        <item>@color/dark_green</item>
+        <item>@color/light_red</item>
+        <item>@color/blue</item>
+        <item>@color/dark_purple</item>
+    </array>
+</resources>

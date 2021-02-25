@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <!-- Categories -->
+    <TextView
+        android:id="@+id/activity_place_category_text"
+        android:layout_width="@dimen/place_description_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/categories"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBaseline_toBaselineOf="@+id/activity_place_category_spinner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/activity_place_category_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_16"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_20"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/activity_place_category_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Label -->
+    <TextView
+        android:id="@+id/activity_place_label_text"
+        android:layout_width="@dimen/place_description_width"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_8"
+        android:spinnerMode="dropdown"
+        android:text="@string/label"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBaseline_toBaselineOf="@+id/activity_place_label_spinner"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+    <Spinner
+        android:id="@+id/activity_place_label_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_8"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_20"
+        android:spinnerMode="dropdown"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/activity_place_label_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_place_category_spinner"/>
+
+
+    <View
+        android:id="@+id/activity_place_label_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_16"
+        android:background="@drawable/line"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_place_label_spinner" />
+
+
+
+
+    <RadioGroup
+        android:id="@+id/activity_place_transportation_mode_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_20"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:checkedButton="@+id/activity_place_transportation_mode_drive"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_place_label_divider">
+
+        <RadioButton
+            android:id="@+id/activity_place_transportation_mode_drive"
+            android:layout_width="@dimen/place_mode_width"
+            android:layout_height="wrap_content"
+            android:button="@null"
+
+            android:background="@drawable/radio_mode_background"
+            android:drawableTop="@drawable/radio_mode_drive"
+
+            android:textSize="2sp"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/activity_place_transportation_mode_transit"/>
+
+        <RadioButton
+            android:id="@+id/activity_place_transportation_mode_transit"
+            android:layout_width="@dimen/place_mode_width"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/radio_mode_background"
+
+
+            android:drawableTop="@drawable/radio_mode_transit"
+
+            android:textSize="2sp"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toRightOf="@+id/activity_place_transportation_mode_drive"
+            app:layout_constraintRight_toRightOf="@+id/activity_place_transportation_mode_bike"/>
+
+        <RadioButton
+            android:id="@+id/activity_place_transportation_mode_bike"
+            android:layout_width="@dimen/place_mode_width"
+            android:layout_height="wrap_content"
+            android:button="@null"
+
+            android:background="@drawable/radio_mode_background"
+            android:drawableTop="@drawable/radio_mode_bike"
+            android:textSize="2sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+
+            app:layout_constraintHorizontal_chainStyle="packed"
+
+            app:layout_constraintLeft_toRightOf="@+id/activity_place_transportation_mode_transit"
+            app:layout_constraintRight_toRightOf="@+id/activity_place_transportation_mode_walk"/>
+
+        <RadioButton
+            android:id="@+id/activity_place_transportation_mode_walk"
+            android:layout_width="@dimen/place_mode_width"
+            android:layout_height="wrap_content"
+            android:button="@null"
+
+            android:background="@drawable/radio_mode_background"
+            android:drawableTop="@drawable/radio_mode_walk"
+            android:textSize="2sp"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toRightOf="@+id/activity_place_transportation_mode_bike"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+    </RadioGroup>
+
+    <!-- Choose Place -->
+    <TextView
+        android:id="@+id/activity_place_choose_destination_text"
+        android:layout_width="@dimen/place_description_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/address"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBaseline_toBaselineOf="@+id/activity_place_choose_destination_edit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_place_transportation_mode_group" />
+
+    <EditText
+        android:id="@+id/activity_place_choose_destination_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_20"
+        android:ems="10"
+        android:hint="@string/choose_destination"
+        android:inputType="text"
+        android:focusable="false"
+        android:clickable="true"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/activity_place_choose_destination_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_place_transportation_mode_group" />
+
+
+    <TextView
+        android:id="@+id/activity_place_name_text"
+        android:layout_width="@dimen/place_description_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_14"
+        android:text="@string/name"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBaseline_toBaselineOf="@+id/activity_place_name_edit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_place_choose_destination_edit" />
+
+    <EditText
+        android:id="@+id/activity_place_name_edit"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_14"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+
+        android:singleLine="true"
+        android:ellipsize="end"
+
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/activity_place_name_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_place_choose_destination_edit" />
+
+
+    <!-- Avoid CheckBox -->
+    <CheckBox
+        android:id="@+id/activity_place_checkbox_avoid_ferries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="@string/avoid_ferries"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_place_name_edit" />
+
+
+    <CheckBox
+        android:id="@+id/activity_place_checkbox_avoid_highways"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_18"
+        android:text="@string/avoid_highways"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_place_checkbox_avoid_ferries" />
+
+    <CheckBox
+        android:id="@+id/activity_place_checkbox_avoid_tolls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_18"
+        android:text="@string/avoid_tolls"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_place_checkbox_avoid_highways" />
+
+
+    <!-- Bottom Buttons -->
+    <View
+        android:id="@+id/activity_place_bottom_button_horizontal_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        app:layout_constraintBottom_toTopOf="@+id/activity_place_cancel_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/activity_place_cancel_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/cancel"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/activity_place_bottom_button_vertical_divider" />
+
+
+    <View
+        android:id="@+id/activity_place_bottom_button_vertical_divider"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/light_gray"
+        app:layout_constraintLeft_toRightOf="@+id/activity_place_cancel_button"
+        app:layout_constraintRight_toLeftOf="@+id/activity_place_save_button"
+        app:layout_constraintTop_toBottomOf="@+id/activity_place_bottom_button_horizontal_divider"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <Button
+        android:id="@+id/activity_place_save_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/save"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/activity_place_bottom_button_vertical_divider"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

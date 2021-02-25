@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme.
+    -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="elevation">0dp</item>
+
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:itemTextAppearance">@style/TextAppearance</item>
+    </style>
+
+    <style name="AppTheme.FlatActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <!--
+        reference: https://stackoverflow.com/questions/19659637/how-to-change-the-background-color-of-action-bars-option-menu-in-android-4-2
+        Popup Menu Background Color styles
+    -->
+    <style name="MyPopupMenu"
+        parent="@android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+    <!-- Popup Menu Text Color styles -->
+    <style name="TextAppearance">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <!--
+    https://github.com/codepath/android_guides/wiki/Google-Play-Style-Tabs-using-TabLayout
+    https://materialdoc.com/components/tabs/ -->
+    <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabMaxWidth">0dp</item>
+        <item name="tabIndicatorColor">@color/tab_indicator</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/TabTextAppearance</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/tab_normal_text</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+</resources>

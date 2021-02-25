@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">My Direction</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">allwiz@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- If you get your api key, please replace 'needAPI' with api key-->
+    <string name="place_api_key">needAPI</string>
+    <string name="message_place_api_key">1. Get an API Key\nVisit https://developers.google.com/places/android-sdk/get-api-key \n\n2. Make a fingerprint\nSHA-1 fingerprint: Right pane in Android Studio > Gradle > My Direction > Tasks > android > signingReport\n\n3. Enable Billing\nVisit https://console.cloud.google.com/project/_/billing/enable\nWe need this to enable the api.</string>
+
+    <string name="page_title_recent">RECENT</string>
+    <string name="page_title_favorite">FAVORITES</string>
+    <string name="page_title_travel">TRAVELS</string>
+
+
+    <string name="title_create_place">Create Place</string>
+    <string name="title_modify_place">Modify Place</string>
+    <string name="title_view_place">Places</string>
+    <string name="title_view_search">Search</string>
+
+
+    <string name="home">Home</string>
+    <string name="work">Work</string>
+    <string name="favorite">Favorite</string>
+    <string name="starred">Starred</string>
+    <string name="search">Search</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="address">Address</string>
+    <string name="categories">Categories</string>
+    <string name="label">Label</string>
+    <string name="label_guide">Type or long click</string>
+    <string name="share">Share</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="copy">Copy</string>
+    <string name="last_visit">Last access</string>
+
+
+
+    <string name="choose_destination">Choose your destination</string>
+    <string name="name">Name</string>
+    <string name="avoid">avoid</string>
+    <string name="avoid_ferries">Avoid Ferries</string>
+    <string name="avoid_highways">Avoid Highways</string>
+    <string name="avoid_tolls">Avoid Tolls</string>
+
+    <string name="add_label">Add Label</string>
+    <string name="add_place">Add Place</string>
+
+
+
+    <string name="create_label">Create label</string>
+    <string name="message_exist_label_name">Label name already exits</string>
+    <string name="message_create_label">You can organize the places using labels.\nPlease create label.</string>
+    <string name="message_empty_label">No name specified.\nPlease enter a valid name.</string>
+    <string name="message_failed_insert_label">Failed to insert label name.\nPlease try again.</string>
+
+    <string name="message_exist_place_name">Place name already exits</string>
+    <string name="message_empty_place_address">No address specified.\nPlease enter a valid address.</string>
+    <string name="message_empty_place_name">No place name specified.\nPlease enter a valid name.</string>
+    <string name="message_create_place_address">No address specified.\nPlease create address.</string>
+    <string name="message_modify_place_address">Do you want to change your address?</string>
+    <string name="message_delete_label">Are you sure you want to delete this label?</string>
+    <string name="message_delete_place">Are you sure you want to delete this place?</string>
+
+
+    <string name="message_complete">Completed</string>
+
+    <string name="page_title_places">Places</string>
+    <string name="empty_string">""</string>
+    <string name="item_count_0">"0"</string>
+    <string name="item_count_over_20">20+</string>
+    <string name="item_count_over_10">9+</string>
+
+
+    <string name="message_copy_clipboard">Copied Address to Clipboard</string>
+    <string name="message_no_item">There is no item.</string>
+    <string name="message_delete_item">Are you sure you want to delete “%s”?</string>
+
+
+</resources>
